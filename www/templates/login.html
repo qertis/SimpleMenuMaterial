@@ -1,0 +1,65 @@
+<div id="login"
+     layout="column"
+     flex
+     ng-controller="LoginCtrl">
+
+    <md-content layout="column"
+                flex
+                style="background-color: #00b2c3;">
+
+        <div style="position: absolute;
+                    bottom: 55%;
+                    width: 100%;
+                    text-align: center;">
+
+            <div style="font-size: 14vw;
+                        color: #038b98;">
+                <span>HEAL</span><span style="font-weight: lighter;">THEE</span>
+            </div>
+
+        </div>
+
+        <div style="position: absolute;
+                  width: 100%;
+                  text-align: center;
+                  padding: 0 100px;
+                  top: 50%;">
+
+            <section layout-align="center center">
+
+                <md-input-container md-no-float>
+                    <input required name="login"
+                           placeholder="Login"
+                           ng-model="login"
+                           title="Example: qwe">
+                </md-input-container>
+
+                <md-input-container md-no-float>
+                    <input required
+                           name="password"
+                           placeholder="Password"
+                           ng-model="password"
+                           title="Example: 123">
+                </md-input-container>
+
+            </section>
+
+            <section layout="row"
+                     layout-align="space-between start">
+
+                <md-button class="md-accent"
+                           ng-click="signUp()">
+                    SIGN UP
+                </md-button>
+
+                <md-button class="md-accent"
+                           ng-click="signIn()">
+                    SIGN IN
+                </md-button>
+
+            </section>
+
+        </div>
+
+    </md-content>
+</div>

@@ -1,0 +1,8 @@
+{
+  "name": "example",
+  "private": "true",
+  "devDependencies": {
+    "angular": "^1.4.x",
+    "angular-material": "latest"
+  }
+}

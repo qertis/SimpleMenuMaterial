@@ -1,0 +1,119 @@
+<div ng-controller="MenuCtrl"
+     flex
+     id="menu">
+
+    <md-toolbar layout="row">
+        <button ng-click="toggleSidenav('left')" class="menuBtn">
+            <span class="visually-hidden">Menu</span>
+        </button>
+
+        <section class="md-toolbar-tools"
+                 layout="row"
+                 layout-align="end end">
+            <md-button aria-label="Search" md-no-ink ng-disabled="true" >
+                <md-icon md-svg-src="icons/ic_search_24px.svg"</md-icon>
+            </md-button>
+
+        </section>
+
+    </md-toolbar>
+
+    <div layout="column" flex>
+
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+
+            <md-toolbar>
+                <div class="md-toolbar-tools" style="margin: 1em 0;">
+                    <span class="face">
+                        <!--<img ng-src="{{'https://material.angularjs.org/img/list/60.jpeg'}}" alt="">-->
+                    </span>
+                </div>
+
+                <!--email-->
+                <md-select
+                        class="md-toolbar-tools md-toolbar-tools-bottom"
+                        ng-model="email"
+                        ng-init="email='1'">
+                    <div ng-repeat="email in emails">
+                        <md-option value="{{$index+1}}">
+                            {{email}}
+                        </md-option>
+                    </div>
+                </md-select>
+
+            </md-toolbar>
+
+            <!--Bottom-->
+            <div style="">
+
+                <!--buttons-->
+                <div class="bottom-sheet-demo inset" layout="column" layout-align="start start">
+
+                    <md-button class="text-clear full-width text-indent-left">
+                        <md-icon md-svg-src="icons/ic_phone_24px.svg" class="abs-left-middle"
+                                 alt="Consultations"></md-icon>
+
+                        <span>Consultations</span>
+                    </md-button>
+
+                    <md-button class="text-clear full-width text-indent-left">
+                        <md-icon md-svg-src="icons/file-document-box.svg" class="abs-left-middle"
+                                 alt="Prescriptions"></md-icon>
+                        <span>Prescriptions</span>
+                    </md-button>
+
+                    <md-button class="text-clear full-width text-indent-left">
+                        <md-icon md-svg-src="icons/ic_group_24px.svg" class="abs-left-middle" alt="Patients"></md-icon>
+                        <span>Patients</span>
+                    </md-button>
+
+                </div>
+
+                <md-divider></md-divider>
+
+                <!--buttons-->
+                <div class="bottom-sheet-demo inset" layout="column" layout-align="space-around start">
+                    <md-button class="text-clear full-width">
+                        Settings
+                    </md-button>
+
+                    <md-button class="text-clear full-width"
+                               ng-click="logOut()">
+                        Logout
+                    </md-button>
+
+                </div>
+
+            </div>
+
+        </md-sidenav>
+
+        <md-content layout="column" flex class="md-padding">
+
+            <md-list>
+                <md-item ng-repeat="post in posts  track by $index">
+                    <md-item-content>
+                        <div class="md-tile-content">
+                            <p>
+                                {{post}}
+                            </p>
+                        </div>
+                    </md-item-content>
+                    <md-divider ng-if="!$last"></md-divider>
+                </md-item>
+            </md-list>
+
+        </md-content>
+
+        <section layout="row"
+                 layout-align="end end">
+            <md-button class="md-primary md-hue-1 md-fab md-fab-bottom-right"
+                       aria-label="Plus">
+                <md-icon md-svg-src="icons/ic_add_24px.svg"
+                </md-icon>
+            </md-button>
+
+        </section>
+
+    </div>
+</div>
