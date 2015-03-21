@@ -6,3 +6,6 @@ Example simple angular menu material
 -> CD www
 
 run index.html
+
+# Demo
+http://goo.gl/MPLfEj
