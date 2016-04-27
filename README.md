@@ -1,15 +1,17 @@
 # SimpleMenuMaterial
-Example simple angular menu material
 
-- npm install bower
-- bower install
-- cd www/
+```
+npm install bower
+bower install
+cd www/
+#run index.html
+```
 
-run index.html
+Tools: 
+* Intel XDK
+* AngularJS
+* angular-material
 
-# Login
+## Auth
 Login: qwe
 Password: 123
-
-# Demo
-http://goo.gl/MPLfEj
