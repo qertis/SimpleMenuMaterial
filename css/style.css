@@ -1,0 +1,139 @@
+.menuBtn {
+	background-color: transparent;
+	border: none;
+	height: 38px;
+	margin: 16px 0 0 16px;
+	width: 36px;
+}
+
+.menuBtn {
+	background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGcgaWQ9IkhlYWRlciI+CiAgICA8Zz4KICAgICAgICA8cmVjdCB4PSItNjE4IiB5PSItMjIzMiIgZmlsbD0ibm9uZSIgd2lkdGg9IjE0MDAiIGhlaWdodD0iMzYwMCIvPgogICAgPC9nPgo8L2c+CjxnIGlkPSJMYWJlbCI+CjwvZz4KPGcgaWQ9Ikljb24iPgogICAgPGc+CiAgICAgICAgPHJlY3QgZmlsbD0ibm9uZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICAgICAgPHBhdGggZD0iTTMsMThoMTh2LTJIM1YxOHogTTMsMTNoMTh2LTJIM1YxM3ogTTMsNnYyaDE4VjZIM3oiIHN0eWxlPSJmaWxsOiNmM2YzZjM7Ii8+CiAgICA8L2c+CjwvZz4KPGcgaWQ9IkdyaWQiIGRpc3BsYXk9Im5vbmUiPgogICAgPGcgZGlzcGxheT0iaW5saW5lIj4KICAgIDwvZz4KPC9nPgo8L3N2Zz4=) no-repeat center center;
+}
+
+button.text-clear.full-width.md-button.md-default-theme {
+	white-space: nowrap;
+  	line-height: 3em;
+  	margin: 0;
+  	padding: 0;
+}
+
+md-toolbar h1 {
+	font-weight: normal;
+}
+
+md-list .md-button {
+	color: inherit;
+	font-weight: 500;
+	text-align: left;
+	width: 100%;
+}
+
+.buttondemoBasicUsage section {
+	background: #f7f7f7;
+	border-radius: 3px;
+	text-align: center;
+	margin: 1em;
+	position: relative !important;
+	padding-bottom: 10px;
+}
+
+.buttondemoBasicUsage md-content {
+	margin-right: 7px;
+}
+
+.buttondemoBasicUsage section .md-button:not(.md-fab) {
+	min-width: 10em;
+}
+
+.buttondemoBasicUsage section .md-button {
+	display: block;
+	margin: 1em;
+	line-height: 25px;
+}
+
+.buttondemoBasicUsage .label {
+	position: absolute;
+	bottom: 5px;
+	left: 7px;
+	color: #ccc;
+	font-size: 14px;
+}
+
+.face,
+.face img {
+	border-radius: 50%;
+	width: 64px;
+	height: 64px;
+	background-color: #038b98;
+	color: transparent;
+	text-align: center;
+	line-height: 64px;
+}
+
+/*  menu    */
+#menu .md-select-label {
+	border: none;
+	font-size: large;
+	color: #F5F5F5;
+	font-weight: 500;
+}
+
+#menu md-toolbar.md-default-theme {
+	box-shadow: none;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.text-clear {
+	text-align: start;
+	text-transform: none;
+}
+
+.text-indent-left {
+	text-align: left;
+	text-indent: 3em;
+}
+
+.abs-left-middle {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+/*  login   */
+#login {
+	height: 100vh;
+	width: 100vw;
+}
+
+#login .md-input {
+	border-bottom: #008491 1px solid;
+}
+
+#login .md-input:active,
+#login .md-input:focus {
+	border-bottom: #F0F8FF 2px solid;
+}
+
+#login ::-webkit-input-placeholder {
+	color: #008491;
+}
+
+#login input {
+	color: #F0F8FF;
+}
+
+#login button {
+	color: #5e506b
+}
+
+.bottom-sheet-demo {
+	color: #4D4D4D;
+}
+
+.bottom-sheet-demo button {
+	margin: 0.5em 0;
+}
